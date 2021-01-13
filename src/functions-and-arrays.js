@@ -10,6 +10,22 @@ function maxOfTwoNumbers(a, b) {
 
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
+function findLongestWord (words) {
+  let longestWord = ''
+
+  for (let i=0; i<words.length; i++){
+    //console.log(i, words[i])
+    console.log('is ',words[i], 'longer than ', longestWord)
+    if(words[i].length > longestWord.length){
+      console.log(`the new longest word is`, words[i])
+      longestWord = words[i]
+    }
+  
+  }
+  console.log('Longest word is', longestWord)
+  return longestWord
+
+}
 
 
 // Iteration #3: Calculate the sum
